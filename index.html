@@ -4,30 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aykhan Dadashov</title>
-  <meta name="description" content="Aykhan Dadashov - Computer Science student and software developer in Riga">
+  <meta name="description" content="Aykhan Dadashov - software developer and Information Systems student in Riga, Latvia">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a href="#top" class="logo">AD</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#coursework">Coursework</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html"><span>AD</span>Aykhan Dadashov</a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="class-activities.html">Class activities</a>
+        <a href="projects.html">Past projects</a>
+        <a href="odin.html">The Odin Project</a>
+        <a href="homework.html">Homework</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
+  <main class="container">
     <section class="hero">
       <div>
         <p class="kicker">Hi, I am</p>
         <h1>Aykhan Dadashov</h1>
-        <p class="role">Computer Science student &amp; software developer in Riga, Latvia</p>
-        <div class="hero-buttons">
-          <a class="btn" href="#projects">See my projects</a>
-          <a class="btn btn-outline" href="https://github.com/Ayxan1110">GitHub</a>
+        <p class="role">Software developer and Information Systems student in Riga, Latvia. I build web applications from the UI to the API.</p>
+        <div class="button-row">
+          <a class="btn" href="odin.html">My Odin Project work</a>
+          <a class="btn btn-outline" href="class-activities.html">Class activities</a>
         </div>
       </div>
       <div class="avatar" aria-hidden="true">AD</div>
@@ -35,148 +37,160 @@
 
     <section id="about">
       <h2>About me</h2>
-      <div class="about-grid">
-        <p>
-          I am 23 years old and I am from Azerbaijan. Now I live in Riga, where I study Computer Science
-          and at the same time work as a software developer, so I can use in practice the things I learn
-          at the university. My objective is to finish my studies with good marks, become a better web
-          developer and later work on big web projects. In my free time I play basketball and go to the gym.
-        </p>
+      <div class="two-col">
+        <div>
+          <p class="lead">
+            I am from Azerbaijan and I live in Riga, where I study Information Systems at ISMA and work as a
+            software developer. I like building scalable web applications and data-driven products, working
+            across the full stack, from responsive interfaces to APIs and analytics. Lately I am exploring AI
+            integration and mobile apps.
+          </p>
+          <p class="lead">
+            My goal is to finish my studies with good results and grow into a senior full stack developer.
+            In my free time I play basketball and go to the gym.
+          </p>
+        </div>
         <ul class="facts">
           <li><span>Based in</span> Riga, Latvia</li>
           <li><span>From</span> Azerbaijan</li>
-          <li><span>Studying</span> Computer Science</li>
-          <li><span>Working as</span> Software developer</li>
+          <li><span>Studying</span> Information Systems, ISMA</li>
+          <li><span>Working as</span> Software Developer</li>
+          <li><span>Languages</span> Azerbaijani, Russian, English, Turkish</li>
         </ul>
       </div>
-
-      <h3>Skills</h3>
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Flexbox &amp; Grid</li>
-        <li>JavaScript</li>
-        <li>Vue / Nuxt</li>
-        <li>Git &amp; GitHub</li>
-      </ul>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
+    <section id="experience">
+      <h2>Work experience</h2>
       <ol class="timeline">
         <li>
-          <h3>Bachelor degree in Computer Science</h3>
-          <p>Riga, Latvia &middot; in progress</p>
-          <p>Subjects like Introduction to Programming, Web Technologies and Software Development.</p>
+          <h3>Software Developer · Adsmom</h3>
+          <p class="meta">Riga, Latvia · Aug 2025 – present</p>
+          <ul>
+            <li>Built semantic search for ad discovery with vector embeddings.</li>
+            <li>Led the frontend architecture with Next.js, React and GraphQL.</li>
+            <li>Integrated the Meta Ad Library API and built analytics dashboards.</li>
+          </ul>
         </li>
         <li>
-          <h3>The Odin Project</h3>
-          <p>Online &middot; Foundations, Intermediate HTML &amp; CSS, JavaScript course</p>
-          <p>A free full stack curriculum that we follow in the Web Technologies subject.</p>
+          <h3>Front-End Developer · BonApp</h3>
+          <p class="meta">Riga, Latvia · Dec 2024 – Jul 2025</p>
+          <ul>
+            <li>Moved several projects to a monorepo architecture.</li>
+            <li>Designed wireframes and prototypes in Figma for a large project.</li>
+          </ul>
         </li>
         <li>
-          <h3>Higher secondary degree</h3>
-          <p>Azerbaijan</p>
-          <p>Mathematics 5/5, Physics 4/5 (9th place in the olympiad).</p>
+          <h3>Front-End Developer · Webzool (remote)</h3>
+          <p class="meta">Los Angeles, CA · Jun 2022 – Jul 2024</p>
+          <ul>
+            <li>Developed responsive web apps with Next.js and React.</li>
+            <li>Improved SEO scores by 60% with server-side rendering.</li>
+          </ul>
         </li>
       </ol>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p class="section-intro">Projects from The Odin Project. "Live" opens the working project, "Code" opens the GitHub repository.</p>
+    <section id="education">
+      <h2>Education and certificates</h2>
+      <div class="two-col">
+        <ol class="timeline">
+          <li>
+            <h3>ISMA University of Applied Sciences</h3>
+            <p class="meta">BSc Information Systems · Sep 2024 – present</p>
+          </li>
+          <li>
+            <h3>Riga Technical University</h3>
+            <p class="meta">BSc Computer Science · 2 semesters, Sep 2023 – Jun 2024</p>
+          </li>
+          <li>
+            <h3>The Odin Project</h3>
+            <p class="meta">Foundations, Intermediate &amp; Advanced HTML and CSS, JavaScript</p>
+          </li>
+        </ol>
+        <div class="cards">
+          <article class="card">
+            <p class="tag-line">Certificate</p>
+            <h3>Frontend Developer (React)</h3>
+            <p>HackerRank skill certification.</p>
+            <div class="card-links">
+              <a href="https://www.hackerrank.com/certificates/5644a0f12ef8">View certificate</a>
+            </div>
+          </article>
+          <article class="card">
+            <p class="tag-line">Bootcamp · 1st place</p>
+            <h3>Web Development Bootcamp</h3>
+            <p>Magebit, Riga, July 2025. E-commerce website in Laravel, won Best Overall Project.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div>
+          <h3>Languages</h3>
+          <ul class="tags"><li>JavaScript</li><li>TypeScript</li><li>C#</li><li>Python</li></ul>
+        </div>
+        <div>
+          <h3>Frontend</h3>
+          <ul class="tags"><li>HTML &amp; CSS</li><li>React</li><li>Next.js</li><li>Vue / Nuxt</li><li>GraphQL</li><li>Redux</li></ul>
+        </div>
+        <div>
+          <h3>Backend</h3>
+          <ul class="tags"><li>Node.js</li><li>NestJS</li><li>Laravel</li><li>.NET</li><li>Prisma</li></ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul class="tags"><li>Git &amp; GitHub</li><li>Docker</li><li>Figma</li><li>Tailwind CSS</li><li>PostHog</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore">
+      <h2>Explore my coursework</h2>
       <div class="cards">
         <article class="card">
-          <p class="tag">JavaScript course</p>
-          <h3>Library</h3>
-          <p>Add, remove and mark books as read. Object constructors and prototypes.</p>
-          <div class="card-links">
-            <a href="https://ayxan1110.github.io/odin-library/">Live</a>
-            <a href="https://github.com/Ayxan1110/odin-library">Code</a>
-          </div>
+          <p class="tag-line">Table</p>
+          <h3>Class activities</h3>
+          <p>Every practical task of the Web Technologies class with its date and links.</p>
+          <div class="card-links"><a href="class-activities.html">Open</a></div>
         </article>
         <article class="card">
-          <p class="tag">JavaScript course</p>
-          <h3>Tic Tac Toe</h3>
-          <p>Two players game made with factory functions and the module pattern.</p>
-          <div class="card-links">
-            <a href="https://ayxan1110.github.io/odin-tic-tac-toe/">Live</a>
-            <a href="https://github.com/Ayxan1110/odin-tic-tac-toe">Code</a>
-          </div>
+          <p class="tag-line">Projects</p>
+          <h3>Past projects</h3>
+          <p>All my projects with live demos, code and presentations.</p>
+          <div class="card-links"><a href="projects.html">Open</a></div>
         </article>
         <article class="card">
-          <p class="tag">Intermediate HTML &amp; CSS</p>
-          <h3>Admin Dashboard</h3>
-          <p>A dashboard layout built with CSS Grid and Flexbox.</p>
-          <div class="card-links">
-            <a href="https://ayxan1110.github.io/odin-admin-dashboard/">Live</a>
-            <a href="https://github.com/Ayxan1110/odin-admin-dashboard">Code</a>
-          </div>
+          <p class="tag-line">Courses</p>
+          <h3>The Odin Project</h3>
+          <p>Four courses with presentations, recordings and practical work.</p>
+          <div class="card-links"><a href="odin.html">Open</a></div>
         </article>
         <article class="card">
-          <p class="tag">Intermediate HTML &amp; CSS</p>
-          <h3>Sign-up Form</h3>
-          <p>A form with HTML validation and a password check.</p>
-          <div class="card-links">
-            <a href="https://ayxan1110.github.io/odin-sign-up-form/">Live</a>
-            <a href="https://github.com/Ayxan1110/odin-sign-up-form">Code</a>
-          </div>
-        </article>
-        <article class="card">
-          <p class="tag">Foundations</p>
-          <h3>Calculator</h3>
-          <p>Works with the mouse and the keyboard, without eval().</p>
-          <div class="card-links">
-            <a href="https://ayxan1110.github.io/odin-calculator/">Live</a>
-            <a href="https://github.com/Ayxan1110/odin-calculator">Code</a>
-          </div>
-        </article>
-        <article class="card">
-          <p class="tag">Foundations</p>
-          <h3>Etch-a-Sketch</h3>
-          <p>A drawing grid made with DOM manipulation and mouse events.</p>
-          <div class="card-links">
-            <a href="https://ayxan1110.github.io/odin-etch-a-sketch/">Live</a>
-            <a href="https://github.com/Ayxan1110/odin-etch-a-sketch">Code</a>
-          </div>
-        </article>
-        <article class="card">
-          <p class="tag">Foundations</p>
-          <h3>Rock Paper Scissors</h3>
-          <p>Play against the computer, first to 5 points wins.</p>
-          <div class="card-links">
-            <a href="https://ayxan1110.github.io/odin-rock-paper-scissors/">Live</a>
-            <a href="https://github.com/Ayxan1110/odin-rock-paper-scissors">Code</a>
-          </div>
+          <p class="tag-line">Code + output</p>
+          <h3>Homework</h3>
+          <p>My HTML homework pages with the code and the result.</p>
+          <div class="card-links"><a href="homework.html">Open</a></div>
         </article>
       </div>
     </section>
 
-    <section id="coursework">
-      <h2>Web Technologies coursework</h2>
-      <table>
-        <thead>
-          <tr><th>Date</th><th>Task</th><th>Link</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>16.09</td><td>HTML page with 10 tags and their explanation</td><td><a href="https://ayxan1110.github.io/Web-technologies/task-16-09/">Open</a></td></tr>
-          <tr><td>30.09</td><td>Web page with only HTML tags: about me, education, interesting topic</td><td><a href="https://ayxan1110.github.io/Web-technologies/">Open</a></td></tr>
-          <tr><td>07.10</td><td>All HTML elements from MDN, explained in my own words</td><td><a href="https://ayxan1110.github.io/Web-technologies/task-07-10/">Open</a></td></tr>
-          <tr><td>14.10</td><td>Intermediate HTML &amp; CSS: Sign-up Form, Admin Dashboard, this profile page</td><td><a href="#projects">Projects</a></td></tr>
-          <tr><td>28.10</td><td>JavaScript course and JavaScript Basics projects</td><td><a href="#projects">Projects</a></td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="contact" class="contact">
+    <section id="contact">
       <h2>Contact</h2>
-      <p>The easiest way to see my work is my GitHub profile.</p>
-      <a class="btn" href="https://github.com/Ayxan1110">github.com/Ayxan1110</a>
+      <p class="lead">You can find my code on GitHub, my experience on LinkedIn and my main portfolio on my own website.</p>
+      <div class="button-row">
+        <a class="btn" href="https://github.com/Ayxan1110">GitHub</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/aykhandadashov110/">LinkedIn</a>
+        <a class="btn btn-outline" href="https://aykhandadashov.com">aykhandadashov.com</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Aykhan Dadashov &middot; made with HTML and CSS</p>
+    <p>&copy; 2026 Aykhan Dadashov · Web Technologies coursework · <a href="https://aykhandadashov.com">aykhandadashov.com</a></p>
   </footer>
 </body>
 </html>
